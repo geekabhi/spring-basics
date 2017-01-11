@@ -16,4 +16,26 @@ public class Math {
         return Stream.iterate(1, n -> n+1).limit(i).reduce(1, (acc, curr) -> acc * curr);
     }
 
+    public static int fibonacci1(int fib,int seed,int x){
+
+        if(x == 0 || x == 1) return x;
+
+        if(seed == x){
+            return fib;
+        }
+        else {
+
+            seed++;
+            fib +=seed;
+
+            return fibonacci1(fib, seed, x);
+        }
+    }
+
+    public static int fibonacci(int x){
+        if(x < 2)
+            return x;
+        return fibonacci(x - 1) + fibonacci(x - 2);
+    }
+
 }

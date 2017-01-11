@@ -33,7 +33,7 @@ public class MathTest {
     }
 
     @Test
-    public void shouldFactorialAnIntger() throws Exception {
+    public void shouldFactorialAnInteger() throws Exception {
         int result = Math.factorial(5);
 
         Assert.assertEquals(120, result);
@@ -42,4 +42,40 @@ public class MathTest {
 
         Assert.assertEquals(6, result);
     }
+
+    @Test
+    public void shouldFibonacciAnInteger() throws Exception {
+
+        int result = Math.fibonacci(0);
+
+        Assert.assertEquals(0, result);
+
+        result = Math.fibonacci(1);
+
+        Assert.assertEquals(1, result);
+
+        result = Math.fibonacci(2);
+
+        Assert.assertEquals(1, result);
+
+        result = Math.fibonacci(3);
+
+        Assert.assertEquals(2, result);
+
+        result = Math.fibonacci(4);
+
+        Assert.assertEquals(3, result);
+
+        result = Math.fibonacci(5);
+
+        Assert.assertEquals(5, result);
+
+        result = Math.fibonacci(11);
+
+        Assert.assertEquals(89, result);
+    }
+
+
+
+
 }
