@@ -31,4 +31,15 @@ public class MathTest {
         Assert.assertEquals(25, result);
 
     }
+
+    @Test
+    public void shouldFactorialAnIntger() throws Exception {
+        int result = Math.factorial(5);
+
+        Assert.assertEquals(120, result);
+
+        result = Math.factorial(3);
+
+        Assert.assertEquals(6, result);
+    }
 }
